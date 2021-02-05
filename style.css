@@ -1,0 +1,49 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: palevioletred;
+    width: 100vw;
+    height: 90vh;
+}
+:root{
+    --cell-size: 100px;
+}
+.gameTable{
+    margin: 20px;
+    display: grid;
+    justify-content:  center;
+    align-content: center;
+    grid-template-columns: repeat(3,auto);
+    
+}
+
+#restartGame{
+
+    color:aqua;
+    padding: 10px;
+    border: solid yellowgreen;
+}
+.cellData{
+    background-color: black;
+    border:0.8px solid rgb(20, 192, 235);
+    width: var(--cell-size);
+    height: var(--cell-size);
+}
+.playerTurn{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#messageforWinner{
+    margin: 10px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
